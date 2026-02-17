@@ -1,0 +1,140 @@
+{
+  "personal": {
+    "name": "Chris van Egmond",
+    "nationality": "Dutch"
+  },
+  "photo": "Foto_Chris_CV.jpg",
+  "intro": "Data scientist with a strong quantitative background who is result and people oriented. I combine this with an entrepreneurial mindset and a desire to be broadly developed. 3+ years of consultancy have allowed me to experience different sides of data projects. From creating data-driven strategic reports, to bringing a data science solution to production, designed for a team of commercial stakeholders. This allows me to deliver business relevant solutions, with a focus on creating value and communicating effectively. On the intersection of people, strategy and data — I enjoy myself the most.",
+  "traits": ["Analytic", "Team Player", "Energetic", "Optimist"],
+  "skills": {
+    "cloudPlatforms": [
+      "Google Cloud Platform",
+      "Microsoft Azure",
+      "Snowflake",
+      "SAP BI"
+    ],
+    "programming": [
+      { "name": "Python", "level": 7 },
+      { "name": "PySpark", "level": 5 },
+      { "name": "Git", "level": 5 },
+      { "name": "SQL", "level": 5 },
+      { "name": "Linux", "level": 5 }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Metyis",
+      "location": "Amsterdam",
+      "roles": [
+        {
+          "title": "Associate Data Scientist",
+          "dates": "Present – Dec 2022",
+          "bullets": [
+            "Performed data analysis, interviews and storylining in a strategic project for a 9bn international fashion company to reduce the number of SKUs in their collection.",
+            "Lead the development of a network optimization for depots and trucks of a gas company in the USA, using linear optimization. Savings were presented to the board and an execution program has started in 2024.",
+            "Presenter, creator and curator of a Data Science Best Practices course for starting data scientists in the company. Course is part of the Metyis Academy, given in Porto."
+          ]
+        },
+        {
+          "title": "Analyst Data Scientist",
+          "dates": "Dec 2022 – Feb 2021",
+          "bullets": [
+            "Created a demand forecasting module using Facebook Prophet for a company in the food and vegetable industry. The product currently runs in production on Microsoft Azure.",
+            "Created product mapping algorithm for the commercial team of a Madrid-based international fashion company. The algorithm was integrated in a Streamlit-based web app to accommodate easy access for the end-users."
+          ]
+        },
+        {
+          "title": "Intern Data Scientist",
+          "dates": "Feb 2021 – Oct 2020",
+          "bullets": [
+            "Designed pricing experiments for an international bedding specialist by fitting a multivariate linear regression to the sales data."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Solar Monkey",
+      "location": null,
+      "roles": [
+        {
+          "title": "Software Developer · 0.2 FTE",
+          "dates": "Sep 2018 – Jan 2019",
+          "bullets": [
+            "Assisting in integrating the algorithm into their Python Django back-end infrastructure."
+          ]
+        },
+        {
+          "title": "Intern Data Scientist · 0.8 FTE",
+          "dates": "Jun 2018 – Sep 2018",
+          "bullets": [
+            "Clustering algorithm which extracted rooftops, their angle and orientation from satellite data."
+          ]
+        }
+      ]
+    }
+  ],
+  "interests": "Rock climbing / Hiking / Alpine sports / Yoga / Reading",
+  "languages": [
+    { "language": "Dutch", "level": "Native" },
+    { "language": "English", "level": "C1" },
+    { "language": "French", "level": "B1" },
+    { "language": "German", "level": "B1" },
+    { "language": "Chinese", "level": "A2" }
+  ],
+  "education": [
+    {
+      "school": "Delft University of Technology",
+      "dates": "2018 – 2020",
+      "degree": "Master Applied Physics · Quantum Nanoscience Track",
+      "details": "GPA: 8.0/10"
+    },
+    {
+      "school": "Delft University of Technology",
+      "dates": "2013 – 2017",
+      "degree": "Bachelor Applied Physics · Minor Mathematical Finance",
+      "details": "GPA: 7.3/10"
+    },
+    {
+      "school": "St. Stanislas College",
+      "dates": "2007 – 2013",
+      "degree": "Gymnasium · Delft",
+      "details": "Nature & Technique profile, Ancient Greek, Cambridge Track English, Economics, French and Chinese."
+    }
+  ],
+  "extra": [
+    {
+      "organization": "The Motown Movement",
+      "dates": "Sep 2018 – Sep 2019",
+      "roles": [
+        "Supervisory board · Chairman",
+        "Executive board of non-profit NGO · Treasurer - Spokesperson · Delft, Detroit - USA"
+      ],
+      "bullets": [
+        "Raised over €80.000 including in-kind donations as the board of a non-profit organisation in Detroit, USA. Involved frequent meetings and pitches with local companies and the community."
+      ]
+    },
+    {
+      "organization": "Study Association for Applied Physics",
+      "dates": null,
+      "roles": null,
+      "bullets": [
+        "2016–2018 Lustrum committee · Chairman",
+        "2015 Introduction weekend committee · Acquisition and Activities",
+        "2014 Alpine sports committee · Acquisition"
+      ]
+    },
+    {
+      "organization": "Delft University of Technology",
+      "dates": "2014–2019",
+      "roles": null,
+      "bullets": null,
+      "summary": "Various student assistant jobs."
+    }
+  ],
+  "contact": {
+    "email": "chris.vanegmond1996@gmail.com",
+    "location": "Amsterdam",
+    "phone": "+31 6 15 96 79 80",
+    "linkedin": "https://www.linkedin.com/in/chris-van-egmond-6b530ab8/"
+  }
+}
