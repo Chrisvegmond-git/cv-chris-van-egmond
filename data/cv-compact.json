@@ -1,0 +1,134 @@
+{
+  "personal": {
+    "name": "Chris van Egmond",
+    "nationality": "Dutch"
+  },
+  "photo": "Foto_Chris_CV.jpg",
+  "intro": "Strategic data scientist with deep quantitative expertise and full-lifecycle experience in data product development—from problem framing and MVP creation to production deployment and monitoring. Experienced in fast-growing tech environments like Vinted, I've partner closely with senior and cross-functional stakeholders to turn complex challenges into scalable, value-generating solutions.",
+  "traits": ["Analytical", "Team-Oriented", "Innovative", "Optimistic"],
+  "skills": {
+    "cloudPlatforms": [
+      "Google Cloud Platform",
+      "Microsoft Azure",
+      "Snowflake"
+    ],
+    "mlPlatforms": [
+      "GitHub Actions",
+      "Docker",
+      "Airflow"
+    ],
+    "programming": [
+      { "name": "Python, SQL, dbt", "level": 7 },
+      { "name": "Git, Linux", "level": 5 },
+      { "name": "PySpark", "level": 3 }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Vinted BV",
+      "location": "Amsterdam",
+      "roles": [
+        {
+          "title": "Senior Decision Scientist - Marketplace Strategy team",
+          "dates": "June 2023 – Present",
+          "bullets": [
+            "<strong>Owned</strong> marketplace performance reporting (<strong>KPIs, dashboards, OKRs</strong>); critically reviewing the accuracy and relevancy of the metrics on which we report. Built and maintained <strong>dbt models</strong> and <strong>SQL ELT pipelines</strong>.",
+            "<strong>Partnered</strong> with <strong>C‑level stakeholders</strong> to shape marketplace strategy and investment decisions; delivered <strong>decision support</strong> through opportunity and market sizing (e.g. strategic decision to launch new categories on Vinted)."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Metyis",
+      "location": "Amsterdam",
+      "roles": [
+        {
+          "title": "Intern / Analyst / Associate - Data Scientist",
+          "dates": "March 2023 - Okt 2020",
+          "bullets": [
+            "Performed <strong>data analysis, interviews and storylining</strong> in a strategic project for a 9bn international fashion company to <strong>reduce the number of SKUs</strong> in their collection.",
+            "<strong>Presenter, creator and curator</strong> of a <strong>Data Science Best Practices</strong> course for starting data scientists. Course is part of the Metyis Academy, given in Porto.",
+            "<strong>Led</strong> the development of a <strong>network optimization</strong> for depots and trucks of a gas company in the USA, using linear optimization. Savings were presented to the <strong>board</strong> and an execution program has started in 2024.",
+            "Created a <strong>demand forecasting module</strong> using <strong>Facebook Prophet</strong> for a company in the food and vegetable industry. The product currently runs <strong>in production on Microsoft Azure</strong>.",
+            "Created a <strong>product mapping algorithm</strong> for the commercial team of a Madrid-based international fashion company. The algorithm was integrated in a <strong>Streamlit-based web app</strong> for end-user access."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Solar Monkey",
+      "location": null,
+      "show": false,
+      "roles": [
+        {
+          "title": "Intern Data Scientist",
+          "dates": "Jun 2018 – Jan 2019",
+          "bullets": [
+            "Built a <strong>clustering algorithm</strong> which extracted <strong>rooftops, angle and orientation</strong> from satellite data.",
+            "Integrated the algorithm into their <strong>Python Django</strong> back-end infrastructure."
+          ]
+        }
+      ]
+    }
+  ],
+  "interests": [
+    "Rock climbing",
+    "Alpine sports",
+    "Yoga"
+  ],
+  "languages": [
+    { "language": "Dutch", "level": "Native" },
+    { "language": "English", "level": "C1" },
+    { "language": "French", "level": "B1" },
+    { "language": "German", "level": "B1" },
+    { "language": "Chinese", "level": "A2" }
+  ],
+  "education": [
+    {
+      "school": "Delft University of Technology",
+      "dates": "2018 – 2020",
+      "degree": "Master Applied Physics · Quantum Nanoscience Track",
+      "details": "GPA: 8.0/10"
+    },
+    {
+      "school": "Delft University of Technology",
+      "dates": "2013 – 2017",
+      "degree": "Bachelor Applied Physics · Minor Mathematical Finance",
+      "details": "GPA: 7.3/10"
+    },
+    {
+      "school": "St. Stanislas College - Delft",
+      "dates": "2007 – 2013",
+      "degree": "Gymnasium",
+      "details": "Nature & Technique profile, Ancient Greek, Cambridge Track English, Economics, French and Chinese."
+    }
+  ],
+  "extra": [
+    {
+      "organization": "The Motown Movement · Delft, Detroit - USA",
+      "dates": "Sep 2018 – Sep 2019",
+      "roles": [
+        "CTO of non-profit NGO · Spokesperson"
+      ],
+      "bullets": [
+        "Raised over €80.000 including in-kind donations as the board of a non-profit organisation in Detroit, USA. Involved frequent meetings and pitches with local companies and the community."
+      ]
+    },
+    {
+      "organization": "Northstar Climbing Academy · Amsterdam",
+      "dates": "Sept 2025 - Present",
+      "roles": [
+        "Founder and personal trainer"
+      ],
+      "bullets": [
+        "Founded and run a bouldering and climbing personal training business in Amsterdam. Providing 1:1 sessions, small-group sessions, and technique workshops."
+      ]
+    }
+  ],
+  "contact": {
+    "email": "chris.vanegmond1996@gmail.com",
+    "location": "Amsterdam",
+    "phone": "+31 6 15 96 79 80",
+    "linkedin": "https://www.linkedin.com/in/chris-van-egmond-6b530ab8/"
+  }
+}

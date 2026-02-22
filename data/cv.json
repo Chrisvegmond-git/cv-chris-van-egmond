@@ -4,14 +4,13 @@
     "nationality": "Dutch"
   },
   "photo": "Foto_Chris_CV.jpg",
-  "intro": "Data scientist with a strong quantitative background who is result and people oriented. I combine this with an entrepreneurial mindset and a desire to be broadly developed. 3+ years of consultancy have allowed me to experience different sides of data projects. From creating data-driven strategic reports, to bringing a data science solution to production, designed for a team of commercial stakeholders. This allows me to deliver business relevant solutions, with a focus on creating value and communicating effectively. On the intersection of people, strategy and data — I enjoy myself the most.",
-  "traits": ["Analytic", "Team Player", "Energetic", "Optimist"],
+  "intro": "Strategic data scientist with a strong quantitative background and a proven ability to translate data into tangible business outcomes. My experience spans product decision support, demand forecasting, and strategic advisory within the fast-growing tech environment at Vinted. I excel at distilling complex problems into scalable solutions while maintaining close alignment with senior business and cross-functional stakeholders.",
+  "traits": ["Analytical", "Team-Oriented", "Innovative", "Optimistic"],
   "skills": {
     "cloudPlatforms": [
       "Google Cloud Platform",
       "Microsoft Azure",
       "Snowflake",
-      "SAP BI"
     ],
     "programming": [
       { "name": "Python", "level": 7 },

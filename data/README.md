@@ -6,3 +6,4 @@
 - Keep valid JSON (commas, quotes). Use `null` for optional fields you want to omit (e.g. no location for an employer).
 - To add a new employer: add an object to `experience` with `company`, optional `location`, and `roles` (array of `{ "title", "dates", "bullets" }`).
 - To add a new role at an existing company: add an object to that employer’s `roles` array.
+- To hide an experience without deleting it: add `"show": false` to that employer object (works in both `cv.json` and `cv-compact.json`).

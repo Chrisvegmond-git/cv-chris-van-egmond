@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chris van Egmond — CV</title>
+  <title>Chris van Egmond — CV (Compact)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,20 +27,27 @@
       font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: var(--text);
       font-size: 0.9375rem;
-      line-height: 1.5;
+      line-height: 1.4;
       max-width: 820px;
       margin: 0 auto;
-      padding: 1.5rem 2rem 2rem;
+      padding: 1rem 2rem 1.25rem;
       background: var(--bg);
     }
 
     @media print {
-      @page { margin: 0; }
+      @page {
+        size: A4;
+        margin: 0;
+      }
       body {
         background: var(--white);
-        padding: 0.4in;
-        font-size: 10pt;
+        padding: 12mm;
+        font-size: 8.25pt;
+        line-height: 1.28;
         max-width: none;
+        width: 210mm;
+        min-height: 297mm;
+        box-sizing: border-box;
       }
       .download-wrap { display: none !important; }
       a { color: var(--text); text-decoration: none; }
@@ -51,6 +58,32 @@
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
+      .intro-box { padding: 0.4rem 0.6rem; margin-bottom: 0.5rem; }
+      .intro-box .intro-content .summary { margin-bottom: 0.25rem; }
+      .intro-box .intro-content .page-header { margin-bottom: 0.25rem; }
+      .skills-top { margin-bottom: 0.5rem; gap: 0.4rem; }
+      .experience-section { margin-bottom: 0.4rem; }
+      .experience-section h2 { margin: 0 0 0.25rem; padding-bottom: 0.1rem; }
+      .employer { margin-bottom: 0.35rem; }
+      .employer-name { margin-bottom: 0.25rem; padding-bottom: 0.1rem; }
+      .role { margin-bottom: 0.25rem; }
+      .role ul { margin: 0.03rem 0 0; line-height: 1.3; }
+      .role li, .job li, .extra-item li, .block-section li { margin-bottom: 0.04rem; }
+      .edu-lang-row {
+        margin-bottom: 0.35rem;
+        gap: 0.6rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+      }
+      .edu-lang-row .education-compact { flex: none; }
+      .edu-lang-row .languages-compact { flex: none; min-width: 0; }
+      .edu-lang-row h3 { margin: 0 0 0.15rem; padding-bottom: 0.1rem; }
+      .extra-section { margin-top: 0.5rem; }
+      .extra-section h2 { margin: 0 0 0.25rem; padding-bottom: 0.1rem; }
+      .job, .extra-item { margin-bottom: 0.4rem; }
+      .contact { margin-top: 0.4rem; padding-top: 0.25rem; }
+      .main h2:not(:first-child), .experience-section h2:not(:first-child) { margin-top: 0.5rem; }
     }
 
     .download-wrap {
@@ -88,29 +121,28 @@
     }
 
     /* Header & intro */
+    .intro-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .intro-box .intro-content {
+      flex: 1;
+      min-width: 0;
+    }
+
     .page-header {
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.35rem;
     }
 
     h1 {
       font-family: 'Libre Baskerville', Georgia, serif;
-      font-size: 1.625rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin: 0;
       letter-spacing: 0.02em;
       color: var(--text);
-    }
-
-    .intro-row {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 1.25rem;
-      align-items: start;
-      margin-bottom: 0.75rem;
-    }
-
-    @media (max-width: 600px) {
-      .intro-row { grid-template-columns: 1fr; }
     }
 
     .cv-photo {
@@ -123,44 +155,45 @@
       border: 1px solid var(--border);
       box-shadow: 0 2px 8px rgba(30, 41, 59, 0.08);
       display: block;
+      flex-shrink: 0;
     }
 
-    .intro-row .cv-photo {
-      margin-bottom: 0;
-    }
-
-    .intro-row .summary {
+    .intro-content .summary {
       margin: 0;
       font-size: 0.8125rem;
-      line-height: 1.6;
+      line-height: 1.45;
       color: var(--text);
     }
 
     .traits {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.35rem 0.5rem;
-      margin-bottom: 1rem;
+      gap: 0.25rem 0.4rem;
+      margin-bottom: 0.5rem;
     }
 
     .trait {
       font-size: 0.8125rem;
       font-weight: 600;
       color: var(--accent);
-      padding: 0.25rem 0.6rem;
+      padding: 0.15rem 0.5rem;
       background: var(--accent-light);
       border-radius: 4px;
     }
 
-    /* Skills row: Cloud Platforms | Programming */
+    /* Skills row: Cloud Platforms | DevOps | Programming | Interests */
     .skills-top {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 1.25rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
+      .skills-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 500px) {
       .skills-top { grid-template-columns: 1fr; }
     }
 
@@ -174,7 +207,7 @@
     }
 
     .block-section section {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     .block-section section:last-child {
@@ -187,8 +220,8 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--accent);
-      margin: 0 0 0.4rem;
-      padding-bottom: 0.25rem;
+      margin: 0 0 0.25rem;
+      padding-bottom: 0.15rem;
       border-bottom: 2px solid var(--accent);
     }
 
@@ -204,7 +237,7 @@
     }
 
     .block-section li {
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.08rem;
     }
 
     .block-section .edu-item {
@@ -232,7 +265,7 @@
 
     /* Experience: full width */
     .experience-section {
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.5rem;
     }
 
     .experience-section h2 {
@@ -261,12 +294,12 @@
     }
 
     .bottom-grid h2:not(:first-child) {
-      margin-top: 1rem;
+      margin-top: 0.6rem;
     }
 
     /* Extra curricular: full width */
     .extra-section {
-      margin-top: 1.5rem;
+      margin-top: 0.9rem;
     }
 
     .extra-section h2 {
@@ -283,8 +316,8 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--accent);
-      margin: 0 0 0.5rem;
-      padding-bottom: 0.25rem;
+      margin: 0 0 0.35rem;
+      padding-bottom: 0.15rem;
       border-bottom: 2px solid var(--accent);
     }
 
@@ -295,12 +328,12 @@
 
     .main h2:not(:first-child),
     .experience-section h2:not(:first-child) {
-      margin-top: 1.25rem;
+      margin-top: 0.75rem;
     }
 
     /* Employer = one company; roles = functions within it */
     .employer {
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.5rem;
     }
 
     .employer:last-child {
@@ -311,13 +344,13 @@
       font-weight: 700;
       font-size: 0.9375rem;
       color: var(--text);
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.2rem;
+      margin-bottom: 0.35rem;
+      padding-bottom: 0.15rem;
       border-bottom: 1px solid var(--border);
     }
 
     .role {
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.35rem;
     }
 
     .role:last-child {
@@ -329,8 +362,8 @@
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
-      gap: 0.25rem 0.5rem;
-      margin-bottom: 0.15rem;
+      gap: 0.2rem 0.5rem;
+      margin-bottom: 0.08rem;
     }
 
     .role-title {
@@ -348,22 +381,22 @@
     .role-location {
       font-size: 0.85rem;
       color: var(--muted);
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.08rem;
     }
 
     .role ul {
-      margin: 0.2rem 0 0;
+      margin: 0.05rem 0 0;
       padding-left: 1.15rem;
       font-size: 0.875rem;
-      line-height: 1.45;
+      line-height: 1.38;
     }
 
     .role li {
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.08rem;
     }
 
     .job, .extra-item {
-      margin-bottom: 1rem;
+      margin-bottom: 0.6rem;
     }
 
     .job:last-of-type,
@@ -376,8 +409,8 @@
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
-      gap: 0.25rem 0.5rem;
-      margin-bottom: 0.15rem;
+      gap: 0.2rem 0.5rem;
+      margin-bottom: 0.08rem;
     }
 
     .job-company, .edu-school {
@@ -403,31 +436,31 @@
     }
 
     .job ul, .extra-item ul {
-      margin: 0.2rem 0 0;
+      margin: 0.05rem 0 0;
       padding-left: 1.15rem;
       font-size: 0.875rem;
-      line-height: 1.45;
+      line-height: 1.38;
     }
 
     .job li, .extra-item li {
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.08rem;
     }
 
     .programming {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1rem;
+      flex-direction: column;
+      gap: 0.2rem;
       font-size: 0.875rem;
     }
 
     .skill {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 0.4rem;
     }
 
     .skill-name {
-      min-width: 4rem;
       color: var(--muted);
     }
 
@@ -449,15 +482,15 @@
 
     /* Contact footer */
     .contact {
-      margin-top: 1.25rem;
-      padding-top: 0.75rem;
+      margin-top: 0.5rem;
+      padding-top: 0.35rem;
       border-top: 1px solid var(--border);
       font-size: 0.8125rem;
       color: var(--muted);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 0.75rem 1.25rem;
+      gap: 0.4rem 1rem;
     }
 
     .contact a {
@@ -478,21 +511,89 @@
       background: #e8eef5;
       border: 1px solid #d4dde8;
       border-radius: 8px;
-      padding: 0.9rem 1.15rem;
-      margin-bottom: 1rem;
+      padding: 0.6rem 0.9rem;
+      margin-bottom: 0.75rem;
     }
 
-    .intro-box .page-header {
-      margin-bottom: 0.5rem;
+    .intro-box .intro-content {
+      display: flex;
+      flex-direction: column;
     }
 
-    .intro-box .intro-row {
-      margin-bottom: 0.5rem;
+    .intro-box .intro-content .summary {
+      margin-bottom: 0.35rem;
     }
 
     .intro-box .traits {
       margin-bottom: 0;
     }
+
+    /* Education & Languages row */
+    .edu-lang-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.7rem;
+      align-items: flex-start;
+    }
+
+    .edu-lang-row .education-compact {
+      flex: 1;
+    }
+
+    .edu-lang-row .languages-compact {
+      flex: 0 0 auto;
+      min-width: 155px;
+    }
+
+    .edu-lang-row .languages-compact .compact-lines {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.1rem 0.85rem;
+    }
+
+    .edu-lang-row h3 {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin: 0 0 0.25rem;
+      padding-bottom: 0.15rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .compact-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 0.08rem;
+    }
+
+    .compact-lines .edu-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .compact-lines .edu-line .edu-degree {
+      flex-shrink: 0;
+    }
+
+    .compact-lines .edu-line .edu-school {
+      flex-shrink: 0;
+      text-align: right;
+      font-weight: 400;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .compact-lines .lang-line {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
   </style>
 </head>
 <body>
@@ -506,6 +607,6 @@
   </div>
 
   <div id="cv-root"></div>
-  <script src="js/render.js"></script>
+  <script src="js/render-compact.js"></script>
 </body>
 </html>

@@ -2,6 +2,13 @@
 
 Web version of my CV. Content is loaded from **`data/cv.json`**, so you can add or edit experience, education, skills, etc. by editing that file.
 
+## Two versions
+
+| File | Description |
+|------|-------------|
+| **`index.html`** | Long version (full detail, 2 pages when printed) |
+| **`compact.html`** | Compact version (customize for shorter CV) |
+
 - **View:** Run a local server (see below) or use [GitHub Pages](https://pages.github.com/). Opening `index.html` directly in a browser will not load the data (browsers block `fetch` from `file://`).
 - **Download as PDF:** Use the "Download as PDF" button to open the print dialog and save the page as PDF.
 
