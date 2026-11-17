@@ -30,9 +30,9 @@
       "roles": [
         {
           "title": "Senior Decision Scientist - Marketplace Strategy team",
-          "dates": "June 2023 – Present",
+          "dates": "June 2024 – Present",
           "bullets": [
-            "<strong>Owned</strong> marketplace performance reporting (<strong>KPIs, dashboards, OKRs</strong>); critically reviewing the accuracy and relevancy of the metrics on which we report. Built and maintained <strong>dbt models</strong> and <strong>SQL ELT pipelines</strong>.",
+            "<strong>Owned</strong> marketplace performance reporting (<strong>KPIs, dashboards, OKRs</strong>); critically reviewing the accuracy and relevancy of the metrics on which we report. Built and maintained <strong>dbt models</strong> and <strong>SQL ETL pipelines</strong>.",
             "<strong>Partnered</strong> with <strong>C‑level stakeholders</strong> to shape marketplace strategy and investment decisions; delivered <strong>decision support</strong> through opportunity and market sizing (e.g. strategic decision to launch new categories on Vinted)."
           ]
         }
@@ -43,8 +43,8 @@
       "location": "Amsterdam",
       "roles": [
         {
-          "title": "Intern / Analyst / Associate - Data Scientist",
-          "dates": "March 2023 - Okt 2020",
+          "title": "Intern (4mo) / Analyst (2y) / Associate (1y) - Data Scientist",
+          "dates": "Okt 2020 - March 2024",
           "bullets": [
             "Performed <strong>data analysis, interviews and storylining</strong> in a strategic project for a 9bn international fashion company to <strong>reduce the number of SKUs</strong> in their collection.",
             "<strong>Presenter, creator and curator</strong> of a <strong>Data Science Best Practices</strong> course for starting data scientists. Course is part of the Metyis Academy, given in Porto.",
@@ -121,7 +121,7 @@
         "Founder and personal trainer"
       ],
       "bullets": [
-        "Founded and run a bouldering and climbing personal training business in Amsterdam. Providing 1:1 sessions, small-group sessions, and technique workshops."
+        "Founder of a bouldering and climbing personal training business in Amsterdam. Providing 1:1 sessions, small-group sessions, and technique workshops. Currently giving trainings at Bouldering gym Luchthaven Amsterdam."
       ]
     }
   ],

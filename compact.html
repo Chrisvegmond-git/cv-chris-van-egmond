@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Avoid stale HTML/CSS during local dev (inline styles live in this file) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Chris van Egmond — CV (Compact)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,6 +87,14 @@
       .job, .extra-item { margin-bottom: 0.4rem; }
       .contact { margin-top: 0.4rem; padding-top: 0.25rem; }
       .main h2:not(:first-child), .experience-section h2:not(:first-child) { margin-top: 0.5rem; }
+      /* Chrome PDF often draws image box-shadow as an extra “frame”; screen preview can hide it */
+      .cv-photo,
+      .cv-photo-wrap {
+        box-shadow: none !important;
+        outline: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
     }
 
     .download-wrap {
@@ -607,6 +618,6 @@
   </div>
 
   <div id="cv-root"></div>
-  <script src="js/render-compact.js"></script>
+  <script src="js/render-compact.js?v=4"></script>
 </body>
 </html>
